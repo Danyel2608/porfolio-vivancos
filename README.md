@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# Mi Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+¡Bienvenido a mi portfolio! Este repositorio contiene el código fuente de mi página web personal, donde muestro mis proyectos, habilidades y experiencia como desarrollador web. Aquí encontrarás una descripción de cómo está estructurado el proyecto, cómo puedes ejecutarlo localmente y cómo contribuir.
 
-## Available Scripts
+## Descripción
 
-In the project directory, you can run:
+Este portfolio está diseñado para resaltar mis habilidades y proyectos en desarrollo web. Utiliza tecnologías modernas y está optimizado para una experiencia de usuario fluida. A continuación se detallan las secciones principales:
 
-### `npm start`
+- **Header**: Incluye la navegación principal y la opción para cambiar el idioma.
+- **Me**: Presenta una introducción sobre mí, mis habilidades y mi experiencia.
+- **Past Work**: Muestra una selección de mis proyectos anteriores con descripciones y enlaces.
+- **Skills**: Detalla las tecnologías y habilidades que manejo.
+- **Contact**: Ofrece un formulario para contactar conmigo y mi información de contacto.
+- **Footer**: Contiene enlaces a mis perfiles profesionales y mi información de contacto.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologías Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
+- **React-i18next**: Internacionalización y localización de la aplicación.
+- **CSS**: Para el diseño y estilo del sitio.
+- **Intersection Observer API**: Para animaciones de entrada cuando se hace scroll.
+- **Font Awesome**: Para iconos.
 
-### `npm test`
+## Instalación
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para ejecutar este proyecto localmente, sigue estos pasos:
 
-### `npm run build`
+1. **Clona el repositorio**:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    git clone https://github.com/tu-usuario/tu-repositorio.git
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Navega al directorio del proyecto**:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    cd tu-repositorio
+    ```
 
-### `npm run eject`
+3. **Instala las dependencias**:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```bash
+    npm install
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Ejecuta la aplicación**:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```bash
+    npm start
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    La aplicación se abrirá en tu navegador predeterminado en `http://localhost:3000`.
 
-## Learn More
+## Uso
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Navegación**: Utiliza el menú en el encabezado para navegar entre secciones.
+- **Cambio de Idioma**: Haz clic en los íconos de bandera para cambiar el idioma de la interfaz.
+- **Scroll Suave**: Utiliza el botón de desplazamiento para volver al principio de la página.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contribución
 
-### Code Splitting
+Si deseas contribuir a este proyecto, puedes seguir estos pasos:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. **Haz un fork del repositorio**.
+2. **Crea una rama para tus cambios**:
 
-### Analyzing the Bundle Size
+    ```bash
+    git checkout -b nombre-de-tu-rama
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. **Haz commit de tus cambios**:
 
-### Making a Progressive Web App
+    ```bash
+    git add .
+    git commit -m "Descripción de tus cambios"
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. **Haz push de tu rama**:
 
-### Advanced Configuration
+    ```bash
+    git push origin nombre-de-tu-rama
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+5. **Crea una pull request** desde tu repositorio hacia el repositorio principal.
 
-### Deployment
+## Licencia
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Este proyecto está licenciado bajo la [MIT License](LICENSE).
 
-### `npm run build` fails to minify
+## Contacto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Para cualquier consulta o colaboración, puedes contactarme a través de:
+
+- **Correo electrónico**: salcedovivancosdaniel@gmail.com
+- **LinkedIn**: [Daniel Salcedo](https://www.linkedin.com/in/daniel-salcedo-vivancos-87855918b/)
+- **GitHub**: [Danyel2608](https://github.com/Danyel2608)
