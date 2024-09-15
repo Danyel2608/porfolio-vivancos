@@ -1,0 +1,100 @@
+/* Estilos base para dispositivos móviles (mobile-first) */
+.about-me {
+  margin-top: 20em; /* Reducido el margen superior para móviles */
+  margin-left: 2em; /* Reducido el margen izquierdo para móviles */
+  margin-right: 2em;
+  text-align: center;
+  color: white;
+  
+  /* Animación inicial */
+  opacity: 0;
+  transform: translateY(20px); /* Desplazamiento hacia abajo */
+  animation: fadeInUp 2s ease-out forwards; /* Define la animación */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Inicia con desplazamiento hacia abajo */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Termina en la posición original */
+  }
+}
+
+.left h2 {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.left h5 {
+  text-align: center; /* Centrado el texto para móviles */
+  margin-top: 5em;
+  color: grey;
+}
+
+.info-me {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center; /* Centrar contenido en móviles */
+}
+
+.info-me img {
+  width: 0%; /* Ajustar la imagen para que sea visible en móviles */
+  object-fit: cover;
+  height: auto;
+  display: block;
+  margin-bottom: 2em; /* Añadir un poco de espacio debajo de la imagen */
+}
+
+/* Media Queries para pantallas más grandes */
+
+/* Para tablets o pantallas medianas */
+@media screen and (min-width: 600px) {
+  .about-me {
+    margin-top: 24em;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+
+  .left h5 {
+    text-align: left; /* Alinear el texto a la izquierda en tablets */
+  }
+
+  .info-me {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .info-me img {
+    width: 40%; /* Ajustar el tamaño de la imagen en tablets */
+  }
+}
+
+/* Para pantallas grandes como laptops o computadoras de escritorio */
+@media screen and (min-width: 1024px) {
+  .about-me {
+    margin-top: 25em;
+    margin-left: 5em;
+    margin-right: 5em;
+  }
+
+  .left h5 {
+    text-align: left;
+    font-size: 1.5em;
+  }
+
+  .info-me {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .info-me img {
+    width: 30%; /* Ajustar el tamaño de la imagen para pantallas grandes */
+  }
+}

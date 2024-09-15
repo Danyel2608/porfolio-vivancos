@@ -1,0 +1,139 @@
+/* Estilos base para dispositivos móviles (mobile-first) */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    margin: 2em 0;
+    
+    /* Animación inicial */
+    opacity: 0;
+    transform: translateY(20px); /* Desplazamiento hacia abajo */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Transición suave */
+  }
+  
+  .contact.visible {
+    opacity: 1;
+    transform: translateY(0); /* Volver a su posición original */
+  }
+  
+  .contact .fa-people-arrows {
+    font-size: 1.5em; /* Tamaño adecuado para móviles */
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column; /* Disposición en columna para móviles */
+    width: 90%;
+  }
+  
+  .contact-info iframe {
+    width: 100%; /* Ajustar iframe al 100% en móviles */
+    height: auto; /* Ajustar la altura automáticamente */
+    display: none; /* Oculto inicialmente */
+  }
+  
+  .contact-info form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ocupa el ancho total en móviles */
+  }
+  
+  .contact-info form h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2em; /* Tamaño adecuado para móviles */
+  }
+  
+  .contact-info form p {
+    font-size: 0.7em; /* Tamaño más pequeño para móviles */
+    text-align: center;
+  }
+  
+  .contact-info form input {
+    margin: 0.7em 0;
+    padding: 0.7em 0.3em;
+    width: 80%; /* Ajustado para móviles */
+    border-radius: 0.5rem;
+  }
+  
+  .contact-info #message {
+    padding-bottom: 5em; /* Mantener espacio para el mensaje */
+  }
+  
+  .contact-info input:last-child {
+    background-color: #1d8348;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer; /* Añadir puntero para botón */
+  }
+  
+  /* Media Queries para pantallas más grandes */
+  
+  /* Para tablets o pantallas medianas */
+  @media screen and (min-width: 600px) {
+    .contact .fa-people-arrows {
+      font-size: 2em; /* Aumentar el tamaño del icono */
+    }
+    .contact h2 {
+      margin-bottom: 2em;
+    }
+  
+    .contact-info {
+      flex-direction: row; /* Cambiar a disposición en fila para tablets */
+      justify-content: space-between; /* Separar los elementos */
+      width: 80%; /* Ajustar ancho en tablets */
+    }
+  
+    .contact-info iframe {
+      display: flex; /* Mostrar iframe en tablets */
+      justify-content: center;
+      align-items: center;
+      width: 50%; /* Ocupa la mitad del ancho */
+      height: 600px; /* Ajustar altura */
+      margin-right: 1em;
+    }
+  
+    .contact-info form {
+      width: 50%; /* El formulario ocupa la mitad del ancho */
+    }
+  
+    .contact-info form h3 {
+      font-size: 1.5em; /* Aumentar tamaño del texto */
+    }
+  
+    .contact-info form input {
+      width: 90%; /* Aumentar el ancho de los inputs */
+    }
+  }
+  
+  /* Para pantallas grandes como laptops o computadoras de escritorio */
+  @media screen and (min-width: 1024px) {
+    .contact {
+      margin: 4em 0; /* Aumentar el margen superior e inferior */
+    }
+  
+    .contact .fa-people-arrows {
+      font-size: 2.5em; /* Tamaño más grande del icono */
+    }
+  
+    .contact-info {
+      width: 70%; /* Mayor ancho para pantallas grandes */
+    }
+  
+    .contact-info iframe {
+      height: 600px; /* Ajustar altura en pantallas grandes */
+    }
+  
+    .contact-info form h3 {
+      font-size: 2em; /* Aumentar el tamaño del título */
+    }
+  
+    .contact-info form input {
+      width: 95%; /* Inputs más anchos en pantallas grandes */
+    }
+  }
+  

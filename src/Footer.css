@@ -1,0 +1,95 @@
+/* Estilos base para dispositivos móviles (mobile-first) */
+.footer {
+  display: flex;
+  flex-direction: column; /* Disposición en columna para móviles */
+  justify-content: center;
+  align-items: center;
+  background-color: #1c2833;
+  color: grey;
+  width: 100%;
+  padding: 1em;
+  border-top: 1px solid grey;
+  font-size: 0.8em;
+  text-align: center; /* Alineación centrada en móviles */
+  box-sizing: border-box; /* Incluir padding y border en el ancho total */
+  overflow: hidden; /* Ocultar cualquier desbordamiento */
+}
+
+.footer h5 {
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+  text-decoration-color: #34495e;
+  text-transform: uppercase;
+}
+
+.footer .left,
+.footer .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centrar el contenido en móviles */
+  margin: 1em 0; /* Añadir espacio entre los bloques de contenido */
+}
+
+.footer .left a {
+  color: grey;
+  text-decoration: none;
+  margin: 0.5em 0;
+}
+
+.footer .right p {
+  font-size: 1em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Media Queries para pantallas más grandes */
+
+/* Para tablets o pantallas medianas */
+@media screen and (min-width: 600px) {
+  .footer {
+    flex-direction: row; /* Cambiar a disposición en fila para tablets */
+    justify-content: space-between;
+    padding: 1.5em; /* Aumentar el padding */
+    text-align: left; /* Cambiar la alineación del texto */
+  }
+
+  .footer .left,
+  .footer .right {
+    align-items: flex-start; /* Ajustar la alineación en tablets */
+    margin: 0; /* Eliminar el margen entre bloques */
+  }
+
+  .footer .right {
+    align-items: flex-end; /* Mantener alineado a la derecha */
+  }
+
+  .footer h5 {
+    font-size: 1em; /* Aumentar el tamaño de las cabeceras */
+  }
+
+  .footer .left a {
+    font-size: 0.9em; /* Aumentar el tamaño del texto */
+  }
+}
+
+/* Para pantallas grandes como laptops o computadoras de escritorio */
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 2em; /* Mayor padding en pantallas grandes */
+    font-size: 1em; /* Aumentar el tamaño de la fuente */
+  }
+
+  .footer h5 {
+    font-size: 1.2em; /* Mayor tamaño del texto en pantallas grandes */
+  }
+
+  .footer .left,
+  .footer .right {
+    align-items: flex-start;
+  }
+
+  .footer .right {
+    align-items: flex-end;
+  }
+}

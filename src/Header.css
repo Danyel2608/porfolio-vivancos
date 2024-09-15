@@ -1,0 +1,110 @@
+/* Estilos base para móviles (mobile-first) */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c2833;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+  padding: 1em;
+  overflow: hidden;
+}
+
+.header img {
+  width: 50%;
+}
+
+.header div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.header div nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.header div nav button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  opacity: 0.5;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.header div nav button:hover {
+  text-decoration: underline;
+  text-underline-offset: 1em;
+}
+
+.lenguajes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Permite que las imágenes se envuelvan en pantallas más pequeñas */
+}
+
+.lenguajes img {
+  padding: 0.5em; /* Reducido el padding para dispositivos móviles */
+  height: 20px; /* Ajustado el tamaño para pantallas pequeñas */
+  width: 20px;
+  cursor: pointer;
+}
+
+/* Estilos para pantallas medianas (tablets) */
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    padding: 1em 2em;
+  }
+
+  .header img {
+    width: 30%;
+    margin-right: 3em;
+  }
+  .lenguajes img {
+    height: 25px; /* Aumentado el tamaño para pantallas medianas */
+    width: 25px;
+  }
+}
+
+/* Estilos para pantallas grandes (escritorios) */
+@media (min-width: 1024px) {
+  .header {
+    padding: 1em 3em;
+  }
+
+  .header img {
+    width: 20%;
+  }
+
+  .header div {
+    justify-content: flex-end;
+  }
+
+  .header div nav button {
+    font-size: 1.2em;
+    opacity: 0.8;
+    margin-left: 1em;
+  }
+
+  .header h1 {
+    font-size: 2em;
+  }
+
+  .lenguajes img {
+    height: 30px; /* Aumentado el tamaño para pantallas grandes */
+    width: 30px;
+  }
+}
