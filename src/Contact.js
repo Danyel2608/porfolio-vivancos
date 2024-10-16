@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './Contact.css';
 import { useTranslation } from 'react-i18next';
+import ContactImage from "./assets/Contact me.jpeg";
 
 function Contact() {
   const { t } = useTranslation();
@@ -38,7 +39,7 @@ function Contact() {
       <i className="fa-solid fa-people-arrows"></i>
       <h2>{t('contact_header')}</h2>
       <div className="contact-info">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.1553634430297!2d-4.442372724653781!3d36.71882977228296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f77571f59fef%3A0x6019f384a9ce278!2sPje.%20Herrera%20Oria%2C%2014%2C%20Cruz%20de%20Humilladero%2C%2029007%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1725989159608!5m2!1ses!2ses" title="Google Maps Location"></iframe>
+        <img src={ContactImage} alt="contact-image" />
         <form action="https://formsubmit.co/salcedovivancosdaniel@gmail.com" method="POST">
           <h3>{t('contact_form_title')}</h3>
           <p>{t('contact_form_description')}</p>

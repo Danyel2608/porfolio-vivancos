@@ -7,7 +7,8 @@
   "introduction": "Hola, soy Daniel, un desarrollador web Full Stack junior con una pasión por crear soluciones innovadoras y funcionales. En este portafolio, encontrarás una selección de mis proyectos más recientes que destacan mis habilidades en el desarrollo front-end y back-end. Explora mi trabajo para ver cómo puedo aportar valor a tus proyectos y no dudes en ponerte en contacto para cualquier colaboración.",
   "perpetual_description": "El proyecto Perpetual es una aplicación web desarrollada con React en el frontend y Node.js en el backend, utilizando APIs para conectar ambas capas. Implementa un diseño mobile-first que asegura una experiencia de usuario óptima en todos los dispositivos. La aplicación permite a los usuarios comprar artículos agregándolos a una cesta, enviar mensajes a través de un formulario de contacto y explorar trabajos realizados. Utiliza tokens para autenticación y está diseñada para ser responsive, adaptándose a diferentes tamaños de pantalla con media queries.",
   "miguel_cervantes_description": "Miguel Cervantes es una página web sencilla desarrollada con React que muestra su menú, información sobre los propietarios y opciones de contacto para consultas sobre alergias o preferencias del menú. La página también incluye un formulario para agilizar el proceso de pedido. El proyecto es totalmente responsive y utiliza puntos de vista necesarios para garantizar una experiencia óptima en todos los dispositivos.",
-  "skills_and_technologies":"HABILIDADES Y TECNOLOGIAS",
+  "luxury_description": "Luxury es una página web construida con React que se enfoca en coches de lujo. A través de una interfaz moderna y elegante, los usuarios pueden explorar diferentes marcas y modelos de automóviles de alta gama. El sitio está optimizado para ofrecer una experiencia visual atractiva y fluida, destacando las características clave de cada coche.",
+  "skills_and_technologies": "HABILIDADES Y TECNOLOGIAS",
   "skills_description": "Como desarrollador web Full Stack, tengo una sólida experiencia en el desarrollo de aplicaciones web completas, desde la concepción hasta la implementación y el mantenimiento. Estoy altamente capacitado en tecnologías front-end como React, PHP y Symfony, que utilizo para construir interfaces de usuario interactivas y responsivas. En el back-end, trabajo con Node.js y Express para crear API robustas y eficientes. Mi experiencia también incluye el uso de bases de datos como MongoDB y MySQL para la gestión y almacenamiento de datos. Complemento mis habilidades técnicas con conocimientos en herramientas de control de versiones como Git, así como en prácticas de integración continua y despliegue continuo (CI/CD) para garantizar la calidad y eficiencia en el desarrollo de software.",
   "skills_html_css": "HTML5 & CSS3",
   "skills_bootstrap": "BOOTSTRAP",
@@ -37,5 +38,9 @@
   "header_past_work": "Trabajos Anteriores",
   "header_skills": "Habilidades",
   "header_contact": "Contacto",
-  "works_title": "TRABAJOS"
+  "works_title": "TRABAJOS",
+  "links_description":"Ir a GitHub",
+  "links_description_cervantes":"Ir a la web",
+  "links_description_luxury":"Ir a la web"
+
 }

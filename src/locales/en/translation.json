@@ -7,6 +7,7 @@
   "introduction": "Hi, I'm Daniel, a junior Full Stack web developer with a passion for creating innovative and functional solutions. In this portfolio, you'll find a selection of my most recent projects that highlight my skills in both front-end and back-end development. Explore my work to see how I can add value to your projects, and feel free to reach out for any collaboration opportunities.",
   "perpetual_description": "Perpetual’s project is a web application developed with React on the frontend and Node.js on the backend, using APIs to connect both layers. It implements a mobile-first design that ensures an optimal user experience across all devices. The application allows users to purchase items by adding them to a cart, send messages through a contact form, and explore completed works. It uses tokens for authentication and is designed to be responsive, adapting to different screen sizes with media queries.",
   "miguel_cervantes_description": "Miguel Cervantes is a simple website developed with React that displays its menu, information about the owners, and contact options for inquiries about allergies or menu preferences. The page also includes a form to streamline the ordering process. The project is fully responsive and uses the necessary viewports to ensure an optimal experience across all devices.",
+  "luxury_description": "Luxury is a React-based website focused on showcasing luxury cars. It features a sleek, modern interface where users can explore a variety of high-end car brands and models. The site highlights key vehicle features, offering an engaging and visually appealing browsing experience.",
   "skills_and_technologies": "SKILLS AND TECHNOLOGIES",
   "skills_description": "As a Full Stack web developer, I have solid experience in developing complete web applications, from conception to implementation and maintenance. I am highly skilled in front-end technologies like React, PHP, and Symfony, which I use to build interactive and responsive user interfaces. On the back-end, I work with Node.js and Express to create robust and efficient APIs. My experience also includes using databases like MongoDB and MySQL for data management and storage. I complement my technical skills with knowledge of version control tools like Git, as well as continuous integration and continuous deployment (CI/CD) practices to ensure quality and efficiency in software development.",
   "skills_html_css": "HTML5 & CSS3",
@@ -37,5 +38,8 @@
   "header_past_work": "Past Work",
   "header_skills": "Skills",
   "header_contact": "Contact",
-  "works_title": "WORKS"
+  "works_title": "WORKS",
+  "links_description":"Go GitHub",
+  "links_description_cervantes":"Go Web",
+  "links_description_luxury":"Go Web"
 }

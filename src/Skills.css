@@ -37,9 +37,11 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Dos columnas en móviles */
   grid-template-rows: repeat(6, auto);
-  gap: .5em;
+  gap: 0.5em;
   margin: 1em 0;
-  width: 80%;
+  width: 80%; /* Ajustar ancho para dispositivos móviles */
+  max-width: 1200px; /* Establecer un ancho máximo */
+  justify-content: center;
 }
 
 .grid-skills div {
@@ -68,9 +70,12 @@
 /* Para tablets o pantallas medianas */
 @media screen and (min-width: 600px) {
   .grid-skills {
+    display: grid;
     grid-template-columns: repeat(3, 1fr); /* Cambiar a 3 columnas para tablets */
     grid-template-rows: repeat(4, auto); /* Menos filas ya que hay más columnas */
     gap: 1.5em; /* Aumentar el espacio entre los elementos */
+    margin: 2.5em auto; /* Centrar el contenedor en el centro de la página */
+    justify-items: center; /* Centrar los ítems dentro de la grilla */
   }
 
   .skills p {
@@ -79,10 +84,17 @@
 
   .grid-skills i {
     font-size: 1.5em; /* Aumentar el tamaño de los íconos */
-    padding-left: 0.3em;
+    padding: 0.3em;
   }
 
   .grid-skills div {
+    display: flex; /* Cambiar para usar flexbox */
+    flex-direction: column; /* Alinear contenido verticalmente */
+    justify-content: center; /* Centrar contenido verticalmente */
+    align-items: center; /* Centrar contenido horizontalmente */
+    width: 80%; /* Ajustar el ancho */
+    margin: 0.5em; /* Margen entre elementos */
+    background-color: #1c2833;
     padding: 1.5em; /* Más espacio en los elementos */
   }
 }
@@ -110,5 +122,6 @@
 
   .grid-skills div {
     padding: 2em; /* Aumentar padding en pantallas grandes */
+    flex-direction: row;
   }
 }

@@ -7,14 +7,13 @@ function Me() {
 
   return (
     <div className='about-me' id='inicio'>
-      <div className="left">
+      <div className="about-me-content">
         <h2>{t('welcome')}</h2>
         <div className="info-me">
           <img src={perfil} alt="perfil" />
           <h5>{t('introduction')}</h5>
         </div>
       </div>
-      <div className="right"></div>
     </div>
   );
 }

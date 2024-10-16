@@ -16,7 +16,7 @@ function App() {
     // Mostrar el logo de carga durante 5 segundos
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 2000);
 
     // Limpiar el temporizador cuando el componente se desmonte
     return () => clearTimeout(timer);

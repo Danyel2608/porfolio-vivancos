@@ -11,25 +11,13 @@
   transform: translateY(20px); /* Desplazamiento hacia abajo */
   animation: fadeInUp 2s ease-out forwards; /* Define la animación */
 }
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px); /* Inicia con desplazamiento hacia abajo */
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0); /* Termina en la posición original */
-  }
-}
-
-.left h2 {
+.about-me-content h2 {
   text-transform: uppercase;
   margin: 0;
 }
 
-.left h5 {
-  text-align: center; /* Centrado el texto para móviles */
+.info-me h5 {
+  text-align: end; /* Centrado el texto para móviles */
   margin-top: 5em;
   color: grey;
 }
@@ -50,6 +38,18 @@
   margin-bottom: 2em; /* Añadir un poco de espacio debajo de la imagen */
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Inicia con desplazamiento hacia abajo */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Termina en la posición original */
+  }
+}
+
+
 /* Media Queries para pantallas más grandes */
 
 /* Para tablets o pantallas medianas */
@@ -60,8 +60,8 @@
     margin-right: 3em;
   }
 
-  .left h5 {
-    text-align: left; /* Alinear el texto a la izquierda en tablets */
+  .info-me h5 {
+    text-align: end; /* Alinear el texto a la izquierda en tablets */
   }
 
   .info-me {
@@ -72,6 +72,7 @@
 
   .info-me img {
     width: 40%; /* Ajustar el tamaño de la imagen en tablets */
+    margin: 0 5%;
   }
 }
 
@@ -83,18 +84,19 @@
     margin-right: 5em;
   }
 
-  .left h5 {
-    text-align: left;
+  .info-me h5 {
+    text-align: justify;
     font-size: 1.5em;
+    width: 50%;
   }
 
   .info-me {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
   }
 
   .info-me img {
-    width: 30%; /* Ajustar el tamaño de la imagen para pantallas grandes */
+    width: 20%; /* Ajustar el tamaño de la imagen para pantallas grandes */
   }
 }

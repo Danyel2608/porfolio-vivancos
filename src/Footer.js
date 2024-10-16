@@ -9,8 +9,8 @@ function Footer() {
     <div className='footer'>
       <div className="left">
         <h5>{t('footer_additional_info')}</h5>
-        <a href="https://www.linkedin.com/in/daniel-salcedo-vivancos-87855918b/" target="_blank" rel="noopener noreferrer">{t('footer_linkedin')}</a>
-        <a href="https://github.com/Danyel2608" target="_blank" rel="noopener noreferrer">{t('footer_github')}</a>
+        <a className="links-footer" href="https://www.linkedin.com/in/daniel-salcedo-vivancos-87855918b/" target="_blank" rel="noopener noreferrer">{t('footer_linkedin')}</a>
+        <a className="links-footer" href="https://github.com/Danyel2608" target="_blank" rel="noopener noreferrer">{t('footer_github')}</a>
       </div>
       <div className="right">
         <h5>{t('footer_contact_me')}</h5>

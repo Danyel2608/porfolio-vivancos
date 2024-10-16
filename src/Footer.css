@@ -31,10 +31,14 @@
   margin: 1em 0; /* Añadir espacio entre los bloques de contenido */
 }
 
-.footer .left a {
+.links-footer {
   color: grey;
   text-decoration: none;
   margin: 0.5em 0;
+}
+
+.links-footer:hover {
+  border-bottom: white 1px solid;
 }
 
 .footer .right p {
@@ -49,7 +53,7 @@
 @media screen and (min-width: 600px) {
   .footer {
     flex-direction: row; /* Cambiar a disposición en fila para tablets */
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 1.5em; /* Aumentar el padding */
     text-align: left; /* Cambiar la alineación del texto */
   }
