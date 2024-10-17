@@ -20,8 +20,14 @@
 
 .contact .fa-people-arrows {
   font-size: 1.5em; /* Tamaño adecuado para móviles */
+  color: #293737;
 }
-
+.contact h2{
+  border-bottom: 2px solid #293737;
+  padding-bottom: .5em;
+  width: 50%;
+  text-align: center;
+}
 .contact-info {
   display: flex;
   flex-direction: column; /* Disposición en columna para móviles */
@@ -51,6 +57,7 @@
 .contact-info form p {
   font-size: 0.7em; /* Tamaño más pequeño para móviles */
   text-align: center;
+  margin-bottom: 2em;
 }
 
 .contact-info form input {
@@ -58,17 +65,22 @@
   padding: 0.7em 0.3em;
   width: 80%; /* Ajustado para móviles */
   border-radius: 0.5rem;
+  background-color: #293737;
+  color: #D5DBDB;
 }
 
 .contact-info #message {
-  padding-bottom: 5em; /* Mantener espacio para el mensaje */
+  padding-bottom: 10em; /* Mantener espacio para el mensaje */
 }
 
 .contact-info input:last-child {
-  background-color: #1d8348;
+  background-color: #91918F;
   color: white;
   text-transform: uppercase;
   cursor: pointer; /* Añadir puntero para botón */
+  width: 50%;
+  padding: 1em;
+  border-radius: 3em;
 }
 
 /* Media Queries para pantallas más grandes */
@@ -127,6 +139,10 @@
 
   .contact-info form h3 {
       font-size: 2em; /* Aumentar el tamaño del título */
+  }
+  .contact-info form p {
+    font-size: .8em;
+    text-align: justify;
   }
 
   .contact-info form input {

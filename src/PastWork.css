@@ -1,125 +1,140 @@
 /* Estilos base para dispositivos móviles (mobile-first) */
 .projects {
-    margin-top: 30%;
-    color: grey;
-    text-align: center;
-    
-    /* Animación inicial */
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 3s ease-out, transform 1s ease-out;
+  margin-top: 30%;
+  color: grey;
+  text-align: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Animación inicial */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 3s ease-out, transform 1s ease-out;
 }
-
+.projects h2 {
+  margin-bottom: 2em;
+  border-bottom: 2px solid #293737;
+  padding-bottom: 0.5em;
+  width: 50%;
+}
 .projects.visible {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
+.fa-briefcase {
+  color: #293737;
+  font-size: 1.5em;
+}
 .grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .image-container {
-    position: relative;
-    width: 90%;
-    margin: 2em;
+  position: relative;
+  width: 90%;
+  margin: 2em;
 }
 
 .image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-    cursor: pointer;
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
 }
 
 .description {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(11, 12, 14, 0.8);
-    color: white;
-    padding: 15px 10px;
-    text-align: center;
-    font-size: 0.7em;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #293737;
+  color: white;
+  padding: 15px 10px;
+  text-align: center;
+  font-size: 0.7em;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .description p {
-    text-align: center;
-    margin: 0; /* Eliminar márgenes para evitar sobresalir */
-    font-size: .8em;
+  text-align: center;
+  margin: 0; /* Eliminar márgenes para evitar sobresalir */
+  font-size: 0.8em;
 }
 
 .description a {
-    margin-top: 2em;
-    background-color: #283747;
-    padding: 0.5em 1em;
-    opacity: 0.7;
-    text-decoration: none;
-    border: 1px solid grey;
-    color: white;
-    max-width: 80%;
-    box-sizing: border-box;
-    display: inline-block;
+  margin-top: 2em;
+  background-color: #5d6363;
+  padding: 0.5em 1em;
+  opacity: 0.7;
+  text-decoration: none;
+  border: 1px solid black;
+  color: white;
+  max-width: 80%;
+  box-sizing: border-box;
+  display: inline-block;
 }
 
 /* Mostrar la descripción al pasar el cursor */
 .image-container:hover .description {
-    opacity: 1;
+  opacity: 1;
 }
-.links-cervantes,.links-luxury{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.links-cervantes,
+.links-luxury {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 /* Media Queries para pantallas más grandes */
 
 /* Para tablets o pantallas medianas */
 @media screen and (min-width: 600px) {
-    .projects {
-        margin-top: 10%;
-        text-align: center;
-    }
+  .projects {
+    margin-top: 10%;
+    text-align: center;
+  }
 
-    .grid {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+  .grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-    .image-container {
-        width: 55%;
-        margin: 1em;
-    }
+  .image-container {
+    width: 55%;
+    margin: 1em;
+  }
 }
 
 /* Para pantallas grandes como laptops o computadoras de escritorio */
 @media screen and (min-width: 1024px) {
-    .projects {
-        margin-top: 5%;
-        text-align: center;
-    }
+  .projects {
+    margin-top: 5%;
+    text-align: center;
+  }
 
-    .grid {
-        justify-content: space-around;
-    }
+  .grid {
+    justify-content: space-around;
+  }
 
-    .image-container {
-        width: 30%;
-        margin: 1em;
-    }
-    .description p,.description a{
-        font-size: 1.2em;
-    }
+  .image-container {
+    width: 30%;
+    margin: 1em;
+  }
+  .description p,
+  .description a {
+    font-size: 1.2em;
+  }
 }

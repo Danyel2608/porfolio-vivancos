@@ -14,12 +14,16 @@
 .about-me-content h2 {
   text-transform: uppercase;
   margin: 0;
+  color: #293737;
 }
 
 .info-me h5 {
   text-align: end; /* Centrado el texto para móviles */
   margin-top: 5em;
   color: grey;
+  background-color:#293737;
+  padding: 2em;
+  border-radius: 2.5rem;
 }
 
 .info-me {
@@ -83,9 +87,11 @@
     margin-left: 5em;
     margin-right: 5em;
   }
-
+  .about-me h2{
+    font-size: 5em;
+  }
   .info-me h5 {
-    text-align: justify;
+    text-align: end;
     font-size: 1.5em;
     width: 50%;
   }

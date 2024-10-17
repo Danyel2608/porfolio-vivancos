@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   margin: 2em 0;
-  
+
   /* Animación inicial */
   opacity: 0;
   transform: translateY(20px); /* Desplazamiento hacia abajo */
@@ -18,12 +18,16 @@
 }
 
 .skills .fa-microchip {
-  color: grey;
+  color: #293737;
   font-size: 1.5em;
 }
 
 .skills h2 {
   color: grey;
+  border-bottom: 2px solid #293737;
+  padding-bottom: 0.5em;
+  width: 50%;
+  text-align: center;
 }
 
 .skills p {
@@ -50,14 +54,19 @@
   align-items: center;
   width: 80%;
   margin: 0.5em;
-  background-color: #1c2833;
+  background-color: #293737;
   padding: 1em; /* Añadir padding para móviles */
-}
+  transition: all ease-in-out 1s;
 
+}
+.grid-skills div:hover{
+  transform: scale(1.1,1.1);
+  transition: all ease-in-out 1s;
+}
 .grid-skills i {
   font-size: 1.2em;
   padding-left: 0.1em;
-  color: #1d8348;
+  color: #D5DBDB;
 }
 
 .grid-skills p {
@@ -71,8 +80,14 @@
 @media screen and (min-width: 600px) {
   .grid-skills {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Cambiar a 3 columnas para tablets */
-    grid-template-rows: repeat(4, auto); /* Menos filas ya que hay más columnas */
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* Cambiar a 3 columnas para tablets */
+    grid-template-rows: repeat(
+      4,
+      auto
+    ); /* Menos filas ya que hay más columnas */
     gap: 1.5em; /* Aumentar el espacio entre los elementos */
     margin: 2.5em auto; /* Centrar el contenedor en el centro de la página */
     justify-items: center; /* Centrar los ítems dentro de la grilla */
@@ -94,7 +109,6 @@
     align-items: center; /* Centrar contenido horizontalmente */
     width: 80%; /* Ajustar el ancho */
     margin: 0.5em; /* Margen entre elementos */
-    background-color: #1c2833;
     padding: 1.5em; /* Más espacio en los elementos */
   }
 }
@@ -106,7 +120,10 @@
   }
 
   .grid-skills {
-    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en pantallas grandes */
+    grid-template-columns: repeat(
+      4,
+      1fr
+    ); /* Cuatro columnas en pantallas grandes */
     grid-template-rows: repeat(3, auto); /* Aún menos filas */
     gap: 2em; /* Mayor espacio entre los elementos */
   }

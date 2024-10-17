@@ -41,7 +41,8 @@ function PastWork() {
 
   return (
     <div className="projects" id="projects">
-      <h2>&lt;-{t("works_title")}-&gt;</h2>
+      <i class="fa-solid fa-briefcase"></i>
+      <h2>{t("works_title")}</h2>
       <div className="grid">
         <div className="image-container">
           <img src={work1} alt="Proyecto Perpetual Work" />

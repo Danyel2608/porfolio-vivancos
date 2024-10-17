@@ -4,11 +4,11 @@
   flex-direction: column; /* Disposición en columna para móviles */
   justify-content: center;
   align-items: center;
-  background-color: #1c2833;
+  background-color: #293737;
   color: grey;
   width: 100%;
   padding: 1em;
-  border-top: 1px solid grey;
+  border-top: 1px solid #D5DBDB;
   font-size: 0.8em;
   text-align: center; /* Alineación centrada en móviles */
   box-sizing: border-box; /* Incluir padding y border en el ancho total */
@@ -18,7 +18,7 @@
 .footer h5 {
   text-decoration: underline;
   text-underline-offset: 0.5em;
-  text-decoration-color: #34495e;
+  text-decoration-color: #D5DBDB;
   text-transform: uppercase;
 }
 

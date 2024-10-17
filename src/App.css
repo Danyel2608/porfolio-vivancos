@@ -1,6 +1,6 @@
 /* Estilos base para dispositivos móviles (mobile-first) */
 body {
-  background-color: #283747;
+  background-color: #5D6363;
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -19,7 +19,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1c2833; /* Fondo oscuro */
+  background-color: #293737; /* Fondo oscuro */
   z-index: 9999; /* Asegúrate de que está por encima de todo */
 }
 

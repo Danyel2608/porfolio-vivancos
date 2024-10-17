@@ -35,7 +35,7 @@ function Header() {
     };
 
     return (
-        <div className='header'>
+        <div className='header' id='inicio'>
             <img src={logo} alt="logo" />
             <div className="nav">
                 <nav>
